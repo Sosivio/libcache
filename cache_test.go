@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shaj13/libcache"
-	_ "github.com/shaj13/libcache/arc"
-	_ "github.com/shaj13/libcache/fifo"
-	_ "github.com/shaj13/libcache/lfu"
-	_ "github.com/shaj13/libcache/lifo"
-	_ "github.com/shaj13/libcache/lru"
-	_ "github.com/shaj13/libcache/mru"
+	"github.com/Sosivio/libcache"
+	_ "github.com/Sosivio/libcache/arc"
+	_ "github.com/Sosivio/libcache/fifo"
+	_ "github.com/Sosivio/libcache/lfu"
+	_ "github.com/Sosivio/libcache/lifo"
+	_ "github.com/Sosivio/libcache/lru"
+	_ "github.com/Sosivio/libcache/mru"
 )
 
 var cacheTests = []struct {

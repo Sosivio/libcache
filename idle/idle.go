@@ -4,7 +4,7 @@ package idle
 import (
 	"time"
 
-	"github.com/shaj13/libcache"
+	"github.com/Sosivio/libcache"
 )
 
 func init() {

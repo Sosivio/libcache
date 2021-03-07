@@ -1,7 +1,7 @@
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/shaj13/libcache@v1.0.0)](https://pkg.go.dev/github.com/shaj13/libcache@v1.0.0)
-[![Go Report Card](https://goreportcard.com/badge/github.com/shaj13/libcache)](https://goreportcard.com/report/github.com/shaj13/libcache)
-[![Coverage Status](https://coveralls.io/repos/github/shaj13/libcache/badge.svg?branch=master)](https://coveralls.io/github/shaj13/libcache?branch=master)
-[![CircleCI](https://circleci.com/gh/shaj13/libcache/tree/master.svg?style=svg)](https://circleci.com/gh/shaj13/libcache/tree/master)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/Sosivio/libcache@v1.0.0)](https://pkg.go.dev/github.com/Sosivio/libcache@v1.0.0)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Sosivio/libcache)](https://goreportcard.com/report/github.com/Sosivio/libcache)
+[![Coverage Status](https://coveralls.io/repos/github/Sosivio/libcache/badge.svg?branch=master)](https://coveralls.io/github/Sosivio/libcache?branch=master)
+[![CircleCI](https://circleci.com/gh/Sosivio/libcache/tree/master.svg?style=svg)](https://circleci.com/gh/Sosivio/libcache/tree/master)
 
 # Libcache
 A Lightweight in-memory key:value cache library for Go. 
@@ -15,16 +15,16 @@ libcache is here to help with that.
 Libcache are local to a single run of your application.<br>
 They do not store data in files, or on outside servers.
 
-Libcache previously an [go-guardian](https://github.com/shaj13/go-guardian) package and designed to be a companion with it.<br>
+Libcache previously an [go-guardian](https://github.com/Sosivio/go-guardian) package and designed to be a companion with it.<br>
 While both can operate completely independently.<br>
 
 
 ## Features
-- Rich [caching API](https://pkg.go.dev/github.com/shaj13/libcache@v1.0.0#Cache)
+- Rich [caching API](https://pkg.go.dev/github.com/Sosivio/libcache@v1.0.0#Cache)
 - Maximum cache size enforcement
 - Default cache TTL (time-to-live) as well as custom TTLs per cache entry
 - Thread safe as well as non-thread safe
-- Event-Driven callbacks ([OnExpired](https://pkg.go.dev/github.com/shaj13/libcache@v1.0.0#Cache),[OnEvicted](https://pkg.go.dev/github.com/shaj13/libcache@v1.0.0#Cache))
+- Event-Driven callbacks ([OnExpired](https://pkg.go.dev/github.com/Sosivio/libcache@v1.0.0#Cache),[OnEvicted](https://pkg.go.dev/github.com/Sosivio/libcache@v1.0.0#Cache))
 - Dynamic cache creation
 - Multiple cache replacement policies:
   - FIFO (First In, First Out)
@@ -39,13 +39,13 @@ While both can operate completely independently.<br>
 Using libcache is easy. First, use go get to install the latest version of the library.
 
 ```sh
-go get github.com/shaj13/libcache
+go get github.com/Sosivio/libcache
 ```
 Next, include libcache in your application:
 ```go
 import (
-    _ "github.com/shaj13/libcache/<desired-replacement-policy>"
-    "github.com/shaj13/libcache"
+    _ "github.com/Sosivio/libcache/<desired-replacement-policy>"
+    "github.com/Sosivio/libcache"
 )
 ```
 
@@ -57,8 +57,8 @@ package main
 import (
     "fmt" 
 
-    "github.com/shaj13/libcache"
-    _ "github.com/shaj13/libcache/lru"
+    "github.com/Sosivio/libcache"
+    _ "github.com/Sosivio/libcache/lru"
 )
 
 func main() {
@@ -79,8 +79,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/shaj13/libcache"
-	_ "github.com/shaj13/libcache/lru"
+	"github.com/Sosivio/libcache"
+	_ "github.com/Sosivio/libcache/lru"
 )
 
 func main() {
@@ -111,8 +111,8 @@ package main
 import (
     "fmt" 
 
-    "github.com/shaj13/libcache"
-    _ "github.com/shaj13/libcache/lru"
+    "github.com/Sosivio/libcache"
+    _ "github.com/Sosivio/libcache/lru"
 )
 
 func main() {
@@ -130,8 +130,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shaj13/libcache"
-	_ "github.com/shaj13/libcache/lru"
+	"github.com/Sosivio/libcache"
+	_ "github.com/Sosivio/libcache/lru"
 )
 
 func main() {
@@ -160,8 +160,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shaj13/libcache"
-	_ "github.com/shaj13/libcache/lru"
+	"github.com/Sosivio/libcache"
+	_ "github.com/Sosivio/libcache/lru"
 )
 
 func main() {
@@ -199,4 +199,4 @@ func main() {
 7. Create new pull request
 
 # License
-Libcache is released under the MIT license. See [LICENSE](https://github.com/shaj13/libcache/blob/master/LICENSE)
+Libcache is released under the MIT license. See [LICENSE](https://github.com/Sosivio/libcache/blob/master/LICENSE)

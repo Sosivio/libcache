@@ -27,7 +27,7 @@ lint:
 	./bin/golangci-lint run -c .golangci.yml ./...
 	
 lint-fix: 
-	@FILES="$(shell find . -type f -name '*.go' -not -path "./vendor/*")"; goimports -local "github.com/shaj13/libcache" -w $$FILES
+	@FILES="$(shell find . -type f -name '*.go' -not -path "./vendor/*")"; goimports -local "github.com/Sosivio/libcache" -w $$FILES
 	./bin/golangci-lint run -c .golangci.yml ./... --fix 
 	./bin/golangci-lint run -c .golangci.yml ./... --fix
 
@@ -35,4 +35,4 @@ lint-fix:
 release: 
 	git clean -df 
 	git checkout -- .
-	$(shell ./bin/semantic-release --slug shaj13/memc) 
+	$(shell ./bin/semantic-release --slug Sosivio/memc) 

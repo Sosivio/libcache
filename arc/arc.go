@@ -4,9 +4,9 @@ package arc
 import (
 	"time"
 
-	"github.com/shaj13/libcache"
-	"github.com/shaj13/libcache/internal"
-	"github.com/shaj13/libcache/lru"
+	"github.com/Sosivio/libcache"
+	"github.com/Sosivio/libcache/internal"
+	"github.com/Sosivio/libcache/lru"
 )
 
 func init() {

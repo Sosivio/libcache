@@ -34,7 +34,7 @@ linters-settings:
   lll:
     line-length: 110
   goimports:
-    local-prefixes: "github.com/shaj13/memc"
+    local-prefixes: "github.com/Sosivio/memc"
 issues:
   exclude-use-default: false
   exclude-rules:
